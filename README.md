@@ -1,2 +1,3 @@
 AsmackDemo
+test
 ==========
