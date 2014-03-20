@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/et_register_host"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="主机地址"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/et_register_servername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="openfire服务器名"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/et_register_port"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="端口号 默认务5222"
+        android:inputType="number"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/et_register_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="用户名"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_register_pass1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_register_user"
+        android:hint="密码"
+        android:password="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_register_pass2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_register_pass1"
+        android:hint="再次输入"
+        android:password="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/bt_regedit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:singleLine="true"
+        android:text="注册" />
+
+</LinearLayout>

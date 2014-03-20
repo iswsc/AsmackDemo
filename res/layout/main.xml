@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText 
+        android:id="@+id/et_user"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="用户名"
+        />
+
+    <EditText
+        
+        android:id="@+id/et_pass"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user"
+        android:hint="密码"
+        android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+        android:password="true" />
+    <EditText
+        android:id="@+id/et_host"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass"
+        android:digits="1234567890.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="主机地址"/>
+    <EditText
+        android:id="@+id/et_servername"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_host"
+        android:hint="服务器名"/>
+    <EditText
+        android:id="@+id/et_port"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_servername"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:hint="端口号默认为5222"/>
+    
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/et_port"
+       android:layout_marginTop="10dip"
+       android:layout_centerInParent="true"
+       android:orientation="horizontal"
+       >
+        <Button 
+        android:id="@+id/bt_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="1"
+        android:layout_marginRight="10dip"
+        android:text="登录"
+        />
+    <Button 
+        android:id="@+id/bt_regedit"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:text="注册"
+        />
+       
+   </LinearLayout>
+    
+</RelativeLayout>

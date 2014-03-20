@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<TextView 
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="30dip"
+    android:text="title"
+    android:textSize="22sp"
+    android:gravity="center"
+    />
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sc_labbar_bg_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/chat_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="37dip"
+            android:layout_weight="100"
+            android:background="@drawable/sc_shurukuangfocus" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/send_msg"
+            android:layout_width="43dip"
+            android:layout_height="37dip"
+            android:layout_margin="3dip"
+            android:background="@drawable/chat_send_button_bg"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="发送" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_below="@id/title"
+        android:layout_above="@id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00ffffff"
+        android:background="@drawable/sc_popwindow_apps_bg" />
+
+</RelativeLayout>

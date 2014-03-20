@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+   android:paddingLeft="20dip"
+   android:paddingRight="20dip"
+   android:background="#b0000000"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/addfriend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要添加好友的用户名(非jid)" />
+   <!--  <EditText
+        android:id="@+id/addgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="添加好友至组别" />
+ -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:id="@+id/sure"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="确定" />
+
+        <Button
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:id="@+id/cancle"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="取消" />
+    </LinearLayout>
+
+</LinearLayout>
